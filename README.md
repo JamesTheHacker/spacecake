@@ -1,6 +1,6 @@
 # SpaceCake
 
-![Spacecake](https://i.imgur.com/52xCV8Z.png, "")
+![Spacecake](https://i.imgur.com/wMl0oeQ.png, "")
 
 I developed this project to help me quickly develop and deploy landing pages to Digital Ocean Spaces. It uses react, mobx and styled-components.
 
