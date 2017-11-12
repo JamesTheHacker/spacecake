@@ -6,7 +6,7 @@ I developed this project to help me quickly develop and deploy static landing pa
 
 Bonus: If you're not a Digital Ocean customer you can get $10 free. That's enough money for 2 months hosting. [Click here to get your $10 free](https://m.do.co/c/dde4646baa31).
 
-SpaceCake is perfect for:
+**SpaceCake is perfect for ...**
 
 * Sales letters and landing pages
 * Newsletters
@@ -28,9 +28,9 @@ SpaceCake is perfect for:
 
 **Install**
 
-   git clone http://github.com/JamesTheHacker/spacecake
-   cd spacecake
-   yarn install
+    git clone http://github.com/JamesTheHacker/spacecake
+    cd spacecake
+    yarn install
 
 **Launch Development Server**
 
