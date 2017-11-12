@@ -18,7 +18,7 @@ exports.development = ({host, port} = {}) => ({
     }
 });
 
-exports.production = () => ({
+exports.production = (options = {}) => ({
     output: {
         publicPath: `/${process.env.BUCKET}/`
     },
