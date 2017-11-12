@@ -73,6 +73,13 @@ You can also get the public URL by navigating to your space on Digital Ocean and
 
 Here's one I done earlier: https://nyc3.digitaloceanspaces.com/jtest/index.html
 
+## Useful Resources
+
+* [Mobx](mobx.js.org)
+* [React](reactjs.org)
+* [styled-components](styled-components.com)
+* [styled-grid](github.com/jxnblk/grid-styled)
+
 ## Help!
 
 If you can improve this project in any way please submit a PR. I welcome all PR's, issues and requests.
