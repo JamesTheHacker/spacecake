@@ -76,3 +76,7 @@ Here's one I done earlier: https://nyc3.digitaloceanspaces.com/jtest/index.html
 ## Help!
 
 If you can improve this project in any way please submit a PR. I welcome all PR's, issues and requests.
+
+## TODO
+
+* Remove Mobx dev. toolbar on deploy. Currently have to remove it manually before deploying.
