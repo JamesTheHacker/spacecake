@@ -8,7 +8,7 @@ const parts = require('./webpack.parts');
 
 const commonConfig = merge([
     {
-        entry: [ 'bootstrap-loader', './src/js/app.js' ],
+        entry: [ './src/js/entry.js' ],
         output: {
             path: path.resolve(__dirname, './dist'),
             filename: 'app.js',
@@ -38,10 +38,6 @@ const commonConfig = merge([
             ]
         },
         plugins: [
-            new webpack.ProvidePlugin({
-                $: "jquery",
-                jQuery: "jquery"
-            }),
             new GoogleFontsPlugin({
                 local: false,
                 fonts: [

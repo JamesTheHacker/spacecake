@@ -2,27 +2,19 @@
 
 ![Spacecake](https://i.imgur.com/52xCV8Z.png, "")
 
-I developed this project to help me quickly develop and deploy static landing pages to Digital Ocean Spaces (S3 is also supported). Spaces is perfect for hosting static pages and applications.
+I developed this project to help me quickly develop and deploy landing pages to Digital Ocean Spaces. It uses react, mobx and styled-components.
 
-Bonus: If you're not a Digital Ocean customer you can get $10 free. That's enough money for 2 months hosting. [Click here to get your $10 free](https://m.do.co/c/dde4646baa31).
-
-**SpaceCake is perfect for ...**
-
-* Sales letters and landing pages
-* Newsletters
-* CVs and resumes
-* Small single page applications
+Note: If you're not a Digital Ocean customer you can get $10 free. That's enough money for 2 months hosting. [Click here to get your $10 free](https://m.do.co/c/dde4646baa31).
 
 ## Features
 
-* Deploy to Digital Ocean Spaces (and S3)
-* ES6
-* Bootstrap SASS
-* jQuery
+* Build and deploy to Digital Ocean Spaces (also works with S3)
+* react
+* mobx
+* styled-components
+* grid-styled
 * Webpack
-* Minification
-* Seperate CSS and JS builds
-* Google fonts CDN
+* Google Fonts from CDN
 
 ## Usage
 
@@ -81,24 +73,6 @@ You can also get the public URL by navigating to your space on Digital Ocean and
 
 Here's one I done earlier: https://nyc3.digitaloceanspaces.com/jtest/index.html
 
-## Minification
-
-When deploying to spaces all `html`, `js` and `css` files are minified by default. Spacecake uses [purifycss](https://github.com/purifycss/purifycss) and [babel minify](https://github.com/babel/minify).
-
-## Bootstrap SASS
-
-Spacecake comes bundled with bootstrap, and SASS. SCSS files are stored in `src/scss`. SASS compilation is handled by [bootstrap-loader](https://github.com/shakacode/bootstrap-loader). Configuration is defined in the `.bootstraprc` file. See [bootstrap-loader](https://github.com/shakacode/bootstrap-loader) for configuration options.
-
-## Assets
-
-Images, videos, audio etc should be stored in the `src/assets` directory. Use [relative urls](https://vuejs-templates.github.io/webpack/static.html) when loading assets. Like so:
-
-    <img src="./assets/logo.png">
-
-## JavaScript
-
-ES6 is supported via Babel. JS files should be included in the `src/js` directory. `src/js/app.js` is the applications entry point.
-
 ## Help!
 
-If you can improve this project in any way please submit a PR. I welcome all PR's, issues and requests. Don't be afraid.
+If you can improve this project in any way please submit a PR. I welcome all PR's, issues and requests.
