@@ -1,0 +1,41 @@
+{
+  "name": "fblander_01",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-minify-webpack-plugin": "^0.2.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-minify": "^0.2.0",
+    "bootstrap-loader": "^2.2.0",
+    "bootstrap-sass": "^3.3.7",
+    "css-loader": "^0.28.7",
+    "cuid": "^1.3.8",
+    "dotenv": "^4.0.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.5",
+    "google-fonts-webpack-plugin": "^0.4.3",
+    "html-loader": "^0.5.1",
+    "html-webpack-plugin": "^2.30.1",
+    "jquery": "^3.2.1",
+    "node-sass": "^4.6.0",
+    "purify-css": "^1.2.5",
+    "purifycss-webpack": "^0.7.0",
+    "resolve-url-loader": "^2.2.0",
+    "sass-loader": "^6.0.6",
+    "sass-resources-loader": "^1.3.1",
+    "style-loader": "^0.19.0",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.4",
+    "webpack-merge": "^4.1.1",
+    "webpack-s3-plugin": "^1.0.0-rc.0"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "dev": "NODE_ENV=development webpack-dev-server --config webpack.config.js",
+    "deploy": "NODE_ENV=production webpack --config webpack.config.js"
+  }
+}

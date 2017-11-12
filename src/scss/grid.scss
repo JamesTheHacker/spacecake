@@ -1,0 +1,11 @@
+.container {
+    @include container-fixed();
+}
+
+header {
+    @include make-row();
+
+    .branding-lul {
+        @include make-sm-column(12);
+    }
+}
