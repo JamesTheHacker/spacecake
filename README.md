@@ -29,11 +29,11 @@ Note: If you're not a Digital Ocean customer you can get $10 free. That's enough
 
 **Launch Development Server**
 
-SpaceCake has a built in development server with live reloading support.
+SpaceCake has a built in development server with hot module reloading. To run the development server:
 
     yarn run dev
 
-After the development server starts navigate to `http://localhost:8080/`
+After the development server starts navigate to `http://localhost:8080/` to see the dummy application. Don't laugh, I put it together to demonstrate media breakpoints, mobx and styled-components.
 
 ## Deploy to Digital Ocean Spaces
 
