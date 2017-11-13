@@ -11,7 +11,7 @@ Note: If you're not a Digital Ocean customer you can get $10 free. That's enough
 * Build and deploy to Digital Ocean Spaces (also works with S3)
 * Sentry error reporting
 * react
-* mobx
+* mobx (including mobx dev. tools in development mode)
 * styled-components
 * grid-styled
 * shevyjs

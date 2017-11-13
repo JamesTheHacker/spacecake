@@ -39,7 +39,7 @@
   },
   "scripts": {
     "build": "gulp build",
-    "dev": "NODE_ENV=development webpack-dev-server --config config/webpack.config.js",
+    "dev": "NODE_ENV=development webpack-dev-server --hot --inline --config config/webpack.config.js",
     "deploy": "NODE_ENV=production webpack --config config/webpack.config.js"
   }
 }

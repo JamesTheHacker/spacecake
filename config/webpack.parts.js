@@ -12,7 +12,7 @@ exports.development = ({host, port} = {}) => ({
     devServer: {
         contentBase: path.resolve(__dirname, 'dist'),
         host,
-        port,
+        port
     }
 });
 
