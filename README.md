@@ -78,10 +78,10 @@ Here's one I done earlier: https://nyc3.digitaloceanspaces.com/jtest/index.html
 
 ## Useful Resources
 
-* [Mobx](mobx.js.org)
-* [React](reactjs.org)
-* [styled-components](styled-components.com)
-* [styled-grid](github.com/jxnblk/grid-styled)
+* [Mobx](http://mobx.js.org)
+* [React](http://reactjs.org)
+* [styled-components](http://styled-components.com)
+* [styled-grid](http://github.com/jxnblk/grid-styled)
 * [react-fontawesome](https://github.com/danawoodman/react-fontawesome)
 * [ShevyJS](https://github.com/kyleshevlin/shevyjs)
 * [Awesome Styled Components](https://github.com/styled-components/awesome-styled-components)
