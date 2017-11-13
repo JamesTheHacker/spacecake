@@ -93,3 +93,6 @@ If you can improve this project in any way please submit a PR. I welcome all PR'
 
 ## TODO
 
+* Add styled-components `<ThemeProvider>`
+* Setup aliases for components, containers and styled-components
+* Move directories and remove `js` directory

@@ -5,10 +5,13 @@ import { observer } from 'mobx-react';
 import DevTools from 'mobx-react-devtools';
 
 import styled, { injectGlobal } from 'styled-components';
-import { Flex, Box } from 'grid-styled'
+import { Box } from 'grid-styled';
 
+// Components
 import Header from '../components/Header';
 import Counter from './Counter';
+import Container from '../styled-components/Container';
+
 
 injectGlobal`
     html {
@@ -17,18 +20,15 @@ injectGlobal`
     }
 `;
 
-const Container = styled(Flex)`
-    max-width: 960px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 50px;
-`
+const AppContainer = Container.extend`
+    margin-top: 100px;
+`;
 
 @observer
 class App extends React.Component {
     render() {
         return (
-            <Container wrap>
+            <AppContainer wrap>
                 { process.env.NODE_ENV === 'development' && <DevTools /> }
                 <Box px={10} width={[ 1, 1/2 ]}>
                     <Header />
@@ -36,7 +36,7 @@ class App extends React.Component {
                 <Box px={10} width={[ 1, 1/2 ]}>
                     <Counter store={this.props.store} />
                 </Box>
-            </Container>
+            </AppContainer>
         )
     }
 }
