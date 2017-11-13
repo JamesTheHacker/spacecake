@@ -24,6 +24,9 @@
     </head>
     <body>
         <div id="app"></div>
+
+        <% if(htmlWebpackPlugin.options.sentry) { %>
         <script src="https://cdn.ravenjs.com/3.19.1/raven.min.js" crossorigin="anonymous"></script>
+        <% } %>
     </body>
 </html>

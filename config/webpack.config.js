@@ -67,7 +67,8 @@ const commonConfig = merge([
                 ]
             }),
             new HtmlWebpackPlugin({
-                template: path.resolve(__dirname, '../src/index.html'),
+                template: path.resolve(__dirname, '../src/index.ejs'),
+                sentry: process.env.SENTRY_DSN
             }),
         ],
     }
