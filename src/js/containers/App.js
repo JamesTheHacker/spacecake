@@ -21,6 +21,7 @@ const Container = styled(Flex)`
     max-width: 960px;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 50px;
 `
 
 @observer
@@ -28,7 +29,7 @@ class App extends React.Component {
     render() {
         return (
             <Container wrap>
-                <DevTools />
+                { process.env.NODE_ENV === 'development' && <DevTools /> }
                 <Box px={10} width={[ 1, 1/2 ]}>
                     <Header />
                 </Box>

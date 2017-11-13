@@ -13,6 +13,8 @@ Note: If you're not a Digital Ocean customer you can get $10 free. That's enough
 * mobx
 * styled-components
 * grid-styled
+* shevyjs
+* React Font Awesome
 * Webpack
 * Google Fonts from CDN
 
@@ -79,6 +81,10 @@ Here's one I done earlier: https://nyc3.digitaloceanspaces.com/jtest/index.html
 * [React](reactjs.org)
 * [styled-components](styled-components.com)
 * [styled-grid](github.com/jxnblk/grid-styled)
+* [react-fontawesome](https://github.com/danawoodman/react-fontawesome)
+* [ShevyJS](https://github.com/kyleshevlin/shevyjs)
+* [Awesome Styled Components](https://github.com/styled-components/awesome-styled-components)
+* [Awesome React](https://github.com/enaqx/awesome-react)
 
 ## Help!
 
@@ -86,4 +92,3 @@ If you can improve this project in any way please submit a PR. I welcome all PR'
 
 ## TODO
 
-* Remove Mobx dev. toolbar on deploy. Currently have to remove it manually before deploying.

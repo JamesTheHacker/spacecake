@@ -1,22 +1,24 @@
 import React from 'react';
 import styled from 'styled-components';
+import Shevy from 'shevyjs';
+
+const shevy = new Shevy()
+const { h1, content } = shevy;
 
 const Header = styled.header`
     color: white;
     text-align: center;
-    padding: 10px;
-    margin-top: 50px;
+`;
 
-    h1 {
-        font-size: 40px;
-        margin: 0;
-    }
+const Heading = styled.h1`
+    font-size: ${h1.fontSize};
+    line-height: ${h1.lineHeight};
+    margin: 0;
+    margin-bottom: ${h1.marginBottom};
+`;
 
-    @media (min-width: 52em) {
-        h1 {
-            font-size: 50px;
-        }
-    }
+const Byline = styled.p`
+    font-size: ${content.fontSize};
 `;
 
 const Branding = styled.p`
@@ -27,7 +29,7 @@ const Branding = styled.p`
 export default () => (
     <Header>
         <Branding>🚀🍰</Branding>
-        <h1>Spacecake</h1>
-        <p>React, Mobx, styled-components, grid-styled</p>
+        <Heading>Spacecake</Heading>
+        <Byline>React, Mobx, styled-components, grid-styled</Byline>
     </Header>
 );

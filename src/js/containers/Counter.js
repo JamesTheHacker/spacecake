@@ -1,57 +1,60 @@
 import React from 'react';
-import styled from 'styled-components';
-import { action } from 'mobx';
+import { action, observable } from 'mobx';
 import { observer } from 'mobx-react';
+import styled from 'styled-components';
+import FontAwesome from 'react-fontawesome';
 
 const CounterContainer = styled.div`
     text-align: center;
     font-size: 40px;
     font-weight: 700;
+`;
 
-    span {
-        color: white;
-        padding: 30px
-    }
+const Count = styled.span`
+    color: white;
+    padding: 30px
+`;
 
-    button {
-        border: 0;
-        background: white;
-        color: rebeccapurple;
-        border-radius: 5px;
-        font-size: 25px;
-        cursor: pointer;
+const Button = styled.button`
+    border: 0;
+    background: white;
+    color: rebeccapurple;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
 
-        :focus {
-            outline: none;
-        }
+    :focus {
+        outline: none;
     }
 
     @media (min-width: 40em) {
-        font-size: 50px;
-
-        button {
-            padding: 10px 20px;
-            font-size: 30px;
-            margin-top: 150px;
-            border-radius: 50px;
-        }
+        padding: 10px 20px;
+        font-size: 22px;
+        border-radius: 50px;
+        margin-top: 80px;
     }
 `;
 
 @observer
 class Counter extends React.Component {
+    @observable counter = 0;
+
     render() {
         return (
             <CounterContainer>
-                <button onClick={this.decrement}>-</button>
-                <span>{this.props.store.counter}</span>
-                <button onClick={this.increment}>+</button>
+                <Button onClick={this.decrement}>
+                    <FontAwesome name="minus" />
+                </Button>
+                <Count>{this.counter}</Count>
+                <Button onClick={this.increment}>
+                    <FontAwesome name="plus" />
+                </Button>
             </CounterContainer>
         )
     }
 
-    @action increment = () => this.props.store.counter = this.props.store.counter + 1;
-    @action decrement = () => this.props.store.counter = this.props.store.counter - 1;
+    @action increment = () => this.counter++;
+    @action decrement = () => this.counter--;
 }
 
 export default Counter;
